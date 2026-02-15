@@ -528,7 +528,7 @@ body {
 
     <!-- Active filters -->
     <div id="active-filters" class="flex items-center mt-3">
-      <div class="w-full px-2 py-2 bg-[#000000] rounded-lg">
+      <div class="w-full px-2 py-2 bg-[#e5e7eb] rounded-lg">
         <div id="selected-categories" class="flex flex-wrap content-center">
           <!-- Selected category tags will be inserted here -->
         </div>
@@ -1253,8 +1253,8 @@ function createSongCard(song) {
         const tag = document.createElement('span');
         tag.className = `inline-block px-1 py-0.5 text-xs rounded-full mr-1 mb-0.5 cursor-pointer ${
           selectedCategories.has(category)
-            ? 'bg-cream-200 text-cream-800 font-medium'
-            : 'bg-cream-100 text-cream-800'
+            ? 'bg-cream-200 text-cream-900 font-medium'
+            : 'bg-cream-100 text-cream-900'
         }`;
         tag.textContent = category;
         tag.addEventListener('click', () => {
